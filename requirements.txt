@@ -1,0 +1,11 @@
+pydub==0.25.1
+numpy==2.1.2
+librosa==0.10.2
+opencv-python==4.10.0.84
+rich==13.9.4
+noisereduce==3.0.2
+ffmpeg-python==0.2.0
+webrtcvad==2.0.10
+json5==0.9.25
+
+pytest==8.3.2

@@ -1,0 +1,29 @@
+# Directory paths
+input_dir: "input_videos"
+output_dir: "output"
+
+# Logging configuration
+log_level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# Audio processing options
+noise_reduction: true
+overall_volume: -3.0  # Volume adjustment in dB (negative = quieter, positive = louder)
+track_volumes:  # Per-track volume adjustments in dB
+  "video1.mp4": 0.0
+  "video2.mp4": -2.0
+  "video3.mp4": 2.0
+
+# Video processing options
+feature_detector: "orb"  # Options: orb, sift
+stitcher_type: "feature"  # Options: feature, opencv
+overlap_percentage: 0.5  # Overlap between videos (0.0 to 1.0)
+blending_mode: "feather"  # Options: feather, multi-band
+perspective_correction: true
+
+# Output options
+output_format: "mp4"
+codec: "H264"
+encoding_params:
+  preset: "medium"
+  crf: 23
+  max_bitrate: "5000k"
